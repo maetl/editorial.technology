@@ -1,0 +1,44 @@
+
+nav {
+	//background-color: #FFEBC8;
+	//background-color: #FFCFC8;
+	margin-top: 2em;
+	width: 100%;
+	font-family: "botanika-mono-web", monospace;
+	text-transform: uppercase;
+
+	ul {
+		text-align: center;
+
+		li {
+			display: inline-block;
+			font-size: 1.5em;
+			font-weight: bold;
+
+			&.active {
+				//background-color: lighten(#FFCFC8, 4%);
+				background-color: darken(#FFCFC8, 22%);
+				border-radius: 0.65em;
+				
+				a {
+					color: #fcfcfc;
+				}
+			}
+
+			a {
+				display: inline-block;
+				padding: 0.3em 1em;
+				//color: darken(#FFCFC8, 78%);
+				color: darken(#FFCFC8, 38%);
+
+				&:hover {
+					//color: darken(#FFCFC8, 58%);
+					//color: darken(#FFCFC8, 58%);
+					color: #fcfcfc;
+					background-color: darken(#FFCFC8, 22%);
+					border-radius: 0.65em;
+				}
+			}
+		}
+	}
+}
