@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your awesome title</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="canonical" href="http://yourdomain.com/">
+    <script src="//use.typekit.net/ulk8dfj.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+
+    <body>
+
+    <div class="logo">
+  <a href="/">Editorial <span>Technology</span></a>
+</div>
+<nav>
+  <ul>
+    <li class="active"><a href="#">Services</a></li>
+    <li><a href="#">Approach</a></li>
+    <li><a href="#">People</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+</nav>
+
+    <div class="page-content">
+      <div class="wrap">
+      <div class="shelf epsilon">
+  <div class="lede">
+    <h1>Software made to measure</h1>
+    <p>We are a specialised consultancy providing strategies, training and tools <br>for startups, retailers and publishers to build sustainable businesses online.</p>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  var menu = $('#navigation-menu');
+  var menuToggle = $('#js-mobile-menu');
+  var signUp = $('.sign-up');
+
+  $(menuToggle).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle(function(){
+      if(menu.is(':hidden')) {
+        menu.removeAttr('style');
+      }
+    });
+  });
+
+ 
+ // underline under the active nav item
+  $(".nav .nav-link").click(function() {
+    $(".nav .nav-link").each(function() {
+      $(this).removeClass("active-nav-item");
+    });
+    $(this).addClass("active-nav-item");
+    $(".nav .more").removeClass("active-nav-item");
+  });
+});
+</script>
+
+    </body>
+</html>
