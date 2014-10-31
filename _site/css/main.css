@@ -448,5 +448,26 @@ nav {
           background-color: #ff6d58;
           border-radius: 0.65em; }
 
+.bio {
+  padding: 2em;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%; }
+  .bio:last-child {
+    margin-right: 0; }
+  .bio h2 {
+    font-size: 42px;
+    margin: 1em 0;
+    color: #d21b00; }
+  .bio p {
+    font-family: Georgia;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px; }
+    .bio p a {
+      font-weight: bold; }
+
 body {
   background-color: #fcfcfc; }
