@@ -19,40 +19,26 @@ function hexagonalPath(x, y, size) {
     return path;
 }
 
-//Data Journalism
-//E-commerce
-//Content Strategy
-//Microservices
-//Hypermedia APIs
-
 var skills = [
-  {"label": "Javascript"},
-  {"label": "DDD, TDD, BDD"},
-  {"label": "Microservices"},
-  {"label": "Ruby"},
-  {"label": "Backbone, Ember"},
-  {"label": "HTML/CSS"},
-  {"label": "PHP"},
-  {"label": "Message queues"},
-  {"label": "Document DBs"},
-  {"label": "MySQL, Postgres"},
-  {"label": "Redis, Memcache"},
-  {"label": "Hypermedia APIs"},
-  {"label": "Rails, Sinatra"},
-  {"label": "NodeJS"},
-  {"label": "Technical Writing"},
-  {"label": "Editorial Design"},
-  {"label": "Content Strategy"},
-  {"label": "Web Typography"},
-  {"label": "Python"},
-  {"label": "Web Typography"},
-  {"label": "E-book design"},
-  {"label": "A/B Testing"},
-  {"label": "Managing Tech Debt"},
-  {"label": "Technical Writing"},
-  {"label": "Redis & Memcache"},
-  {"label": "Couchbase & MongoDB"},
-  {"label": "NodeJs"}
+  {"label": "Javascript", "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
+  {"label": "Domain Models", "href": "http://en.wikipedia.org/wiki/Domain-driven_design"},
+  {"label": "Microservices", "href": "http://martinfowler.com/articles/microservices.html"},
+  {"label": "Ruby", "href": "https://www.ruby-lang.org/en/"},
+  {"label": "Backbone, Ember", "href": "http://backbonejs.org/"},
+  {"label": "HTML/CSS", "href": "http://www.w3.org/standards/webdesign/htmlcss"},
+  {"label": "PHP", "href": "http://php.net/"},
+  {"label": "Message Queues", "href": "http://en.wikipedia.org/wiki/Message_queue"},
+  {"label": "Document DBs", "href": "http://en.wikipedia.org/wiki/Document-oriented_database"},
+  {"label": "MySQL, Postgres", "href": "http://www.mysql.com/"},
+  {"label": "Redis, Memcache", "href": "http://redis.io/"},
+  {"label": "Hypermedia APIs", "href": "http://en.wikipedia.org/wiki/Representational_state_transfer"},
+  {"label": "Rails, Sinatra", "href": "http://rubyonrails.org/"},
+  {"label": "NodeJS", "href": "http://nodejs.org/"},
+  {"label": "Technical Writing", "href": "http://en.wikipedia.org/wiki/Technical_writing"},
+  {"label": "Editorial Design", "href": "http://en.wikipedia.org/wiki/Communication_design"},
+  {"label": "Content Strategy", "href": "http://en.wikipedia.org/wiki/Content_strategy"},
+  {"label": "Web Typography", "href": "http://en.wikipedia.org/wiki/Typography"},
+  {"label": "Python", "href": "https://www.python.org/"}
 ];
 
 var svg = d3.select("#skills-diagram").append("svg");
@@ -95,6 +81,11 @@ hexagon.append("path")
             .duration(2000)
             .ease("linear")
             .style("fill", "#ffa295");
+    })
+    .on("click", function(d, s) {
+        d3.select(this)
+            .style("fill", "#ff6d58");
+        window.open(skills[s].href)
     });
 
 hexagon.append("text")
