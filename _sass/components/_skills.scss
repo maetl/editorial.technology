@@ -4,11 +4,11 @@
 
     .skills-wrap {
 		@include outer-container;
+		padding-top: 4em;
 
 		.skills-body {
-			margin-top: 4em;
+			margin-top: 6em;
 			padding-bottom: 4em;
-			padding-top: 2em;
 			@include span-columns(10);
 			@include shift(1);
 
