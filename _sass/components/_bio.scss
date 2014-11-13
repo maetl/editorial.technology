@@ -14,7 +14,6 @@
 			padding: 2em;
 			@include span-columns(8);
 			@include shift(2);
-			text-align: justify;
 
 			h2 {
 				text-align: center;
@@ -32,20 +31,16 @@
 			}
 
 			p {
-				//font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+				//text-align: justify;
 				font-family: "proxima-nova", sans-serif;
-				font-size: 18px;
+				font-size: 16px;
 				line-height: 1.6;
 				margin-bottom: 20px;
 
-				a {
-					color: darken(#FFCFC8, 68%);
-					font-weight: bold;
-
-					&:hover {
-						color: darken(#FFCFC8, 56%);
-					}
+				&:first-of-type {
+					font-size: 28px;
 				}
+
 			}
 		}
 
