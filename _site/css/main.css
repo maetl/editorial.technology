@@ -366,22 +366,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.logotype {
-  font-family: "botanika-mono-web", monospace;
-  color: #ff5239; }
-
 .logo {
-  text-align: center;
   display: inline-block;
-  font-family: "botanika-mono-web", monospace;
-  padding: 2em;
-  width: 100%; }
+  font-family: "botanika-mono-web", monospace; }
   .logo a {
-    font-size: 4em;
     font-weight: bold;
     color: #ff6d58; }
+    .logo a:hover {
+      color: #ff6d58; }
     .logo a span {
       color: #ff2606; }
+      .logo a span:hover {
+        color: #ff2606; }
 
 .shelf {
   margin-top: 2em;
@@ -420,28 +416,54 @@ table {
       font-size: 2em;
       color: #6c0e00; }
 
-nav {
-  margin-top: 2em;
+.masthead .logo {
+  text-align: center;
+  padding: 2em;
   width: 100%; }
-  nav ul {
+  .masthead .logo a {
+    font-size: 4em; }
+.masthead nav {
+  margin-top: 2em; }
+  .masthead nav ul {
     text-align: center; }
-    nav ul li {
-      display: inline-block;
-      font-size: 1.5em;
-      font-weight: bold; }
-      nav ul li.active {
-        background-color: #ff6d58;
-        border-radius: 0.65em; }
-        nav ul li.active a {
-          color: #fcfcfc; }
-      nav ul li a {
-        display: inline-block;
-        padding: 0.3em 1em;
-        color: #ff2606; }
-        nav ul li a:hover {
-          color: #fcfcfc;
-          background-color: #ff6d58;
-          border-radius: 0.65em; }
+    .masthead nav ul li {
+      font-size: 1.5em; }
+
+.navigation {
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fcfcfc;
+  padding: 10px;
+  border-bottom: 1em solid #ffe1dc; }
+  .navigation .logo {
+    margin-top: 2px;
+    margin-right: 4em;
+    float: left; }
+    .navigation .logo a {
+      font-size: 1.5em; }
+  .navigation nav ul li {
+    font-size: 20px; }
+
+nav ul li {
+  display: inline-block;
+  font-weight: bold; }
+  nav ul li.active {
+    background-color: #ff6d58;
+    border-radius: 0.65em; }
+    nav ul li.active a {
+      color: #fcfcfc; }
+  nav ul li a {
+    display: inline-block;
+    padding: 0.3em 1em;
+    color: #ff2606; }
+    nav ul li a:hover {
+      color: #fcfcfc;
+      background-color: #ff6d58;
+      border-radius: 0.65em; }
 
 .profile {
   width: 100%;
@@ -681,7 +703,7 @@ nav {
     background: white;
     padding-top: 2em;
     width: 100%;
-    z-index: 999;
+    z-index: 99;
     text-align: center; }
     .projects .cover h3 {
       font-size: 28px;
@@ -740,7 +762,7 @@ body {
   background-color: #fcfcfc; }
 
 a {
-  color: #6c0e00;
+  color: #d21b00;
   font-weight: bold; }
   a:hover {
-    color: #a91600; }
+    color: #9f1400; }

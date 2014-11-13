@@ -18,7 +18,7 @@
 
     <body>
 
-    <header class="masthead">
+    <header id="header" class="masthead">
 	<div class="logo">
 	  <a href="/">Editorial <span>Technology</span></a>
 	</div>
@@ -27,7 +27,7 @@
 	  	<li><a href="#profile">Profile</a></li>
 	  	<li><a href="#skills">Skills</a></li>
 	    <li><a href="#services">Services</a></li>
-	    <li><a href="#services">Projects</a></li>
+	    <li><a href="#projects">Projects</a></li>
 	    <li><a href="#contact">Contact</a></li>
 	  </ul>
 	</nav>
@@ -45,28 +45,20 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
-  var menu = $('#navigation-menu');
-  var menuToggle = $('#js-mobile-menu');
-  var signUp = $('.sign-up');
+  var profile = $("#profile");
+  var header = $("#header");
 
-  $(menuToggle).on('click', function(e) {
-    e.preventDefault();
-    menu.slideToggle(function(){
-      if(menu.is(':hidden')) {
-        menu.removeAttr('style');
-      }
-    });
+  $(window).scroll(function() { 
+    var scrollOffset = profile.offset().top + 160;
+    var scrollPosition = $(window).scrollTop();
+
+    if (scrollPosition > scrollOffset) {
+      header.removeClass("masthead").addClass("navigation");
+    } else {
+      header.removeClass("navigation").addClass("masthead");
+    }
   });
 
- 
- // underline under the active nav item
-  $(".nav .nav-link").click(function() {
-    $(".nav .nav-link").each(function() {
-      $(this).removeClass("active-nav-item");
-    });
-    $(this).addClass("active-nav-item");
-    $(".nav .more").removeClass("active-nav-item");
-  });
 });
 </script>
 

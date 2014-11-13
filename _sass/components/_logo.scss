@@ -1,46 +1,22 @@
-
-.logotype {
-	font-family: "botanika-mono-web", monospace;
-	color: darken(#FFCFC8, 28%);
-}
-
 .logo {
-	text-align: center;
 	display: inline-block;
 	font-family: "botanika-mono-web", monospace;
-	padding: 2em;
-	width: 100%;
 
 	a {
-		font-size: $base-font-size * 4;
 		font-weight: bold;
 		color: darken(#FFCFC8, 22%);
 
+		&:hover {
+			color: darken(#FFCFC8, 22%);
+		}
+
 		span {
 			color: darken(#FFCFC8, 38%);
+
+			&:hover {
+				color: darken(#FFCFC8, 38%);
+			}
 		}
 	}
 
-	// a {
-	// 	font-size: $base-font-size * 3;
-	// 	color: $base-link-color;
-	// 	background-color: $base-background-color;
-
-	// 	:hover {
-	// 		color: $hover-link-color;
-	// 		background-color: $base-background-color;
-
-	// 		span {
-	// 			background-color: $hover-link-color;
-	// 			color: $base-background-color;
-	// 		}
-
-	// 	}
-
-	// 	span {
-	// 		border-top: 3px solid $base-link-color;
-	// 		background-color: $base-link-color;
-	// 		color: $base-background-color;
-	// 	}
-	// }
 }
