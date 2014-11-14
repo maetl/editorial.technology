@@ -7,17 +7,15 @@
 
 @import "helpers/reset";
 
-
-// TODO: rename components to projects
-@import "components/logo";
-@import "components/shelf";
-@import "components/nav";
-@import "components/bio";
-@import "components/skills";
-@import "components/services";
-@import "components/projects";
-@import "components/contact";
-@import "components/footer";
+@import "modules/logo";
+@import "modules/shelf";
+@import "modules/nav";
+@import "modules/profile";
+@import "modules/skills";
+@import "modules/services";
+@import "modules/projects";
+@import "modules/contact";
+@import "modules/footer";
 
 body {
 	background-color: #fcfcfc;
