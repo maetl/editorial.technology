@@ -21,6 +21,30 @@
 			#skills-diagram {
 				text-align: center;
 
+				@include media(min-width em(800)) {
+					svg {
+						display: inline;
+					}
+
+					figcaption {
+						display: none;
+					}
+				}
+
+				@include media(max-width em(799)) {
+					svg {
+						display: none;
+					}
+
+					figcaption {
+						display: block;
+						li {
+							font-size: 20px;
+							font-family: "proxima-nova", sans-serif;
+						}
+					}
+				}
+
 				svg {
 					width: 740px;
 					height: 600px;

@@ -535,6 +535,19 @@ nav ul li {
         margin-bottom: 1em; }
       .skills .skills-wrap .skills-body #skills-diagram {
         text-align: center; }
+        @media screen and (min-width: 50em) {
+          .skills .skills-wrap .skills-body #skills-diagram svg {
+            display: inline; }
+          .skills .skills-wrap .skills-body #skills-diagram figcaption {
+            display: none; } }
+        @media screen and (max-width: 49.9375em) {
+          .skills .skills-wrap .skills-body #skills-diagram svg {
+            display: none; }
+          .skills .skills-wrap .skills-body #skills-diagram figcaption {
+            display: block; }
+            .skills .skills-wrap .skills-body #skills-diagram figcaption li {
+              font-size: 20px;
+              font-family: "proxima-nova", sans-serif; } }
         .skills .skills-wrap .skills-body #skills-diagram svg {
           width: 740px;
           height: 600px; }
