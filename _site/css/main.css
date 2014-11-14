@@ -573,23 +573,37 @@ nav ul li {
         font-size: 48px;
         color: #d21b00;
         margin-bottom: 1em; }
-      .services .services-wrap .services-body .services-group {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 23.23176%; }
-        .services .services-wrap .services-body .services-group:last-child {
+      @media screen and (max-width: 47.4375em) {
+        .services .services-wrap .services-body .services-group {
+          padding: 2em; } }
+      @media screen and (min-width: 47.5em) and (max-width: 68.6875em) {
+        .services .services-wrap .services-body .services-group {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 40.29137%;
+          margin-left: 8.5298%;
           margin-right: 0; }
-        .services .services-wrap .services-body .services-group h3 {
-          font-size: 28px;
-          color: #d21b00;
-          font-weight: normal;
-          margin-bottom: 20px; }
-        .services .services-wrap .services-body .services-group p {
-          font-size: 16px;
-          font-family: "proxima nova", sans-serif;
-          line-height: 1.6;
-          margin-bottom: 20px; }
+          .services .services-wrap .services-body .services-group:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 68.75em) {
+        .services .services-wrap .services-body .services-group {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+          .services .services-wrap .services-body .services-group:last-child {
+            margin-right: 0; } }
+      .services .services-wrap .services-body .services-group h3 {
+        font-size: 28px;
+        color: #d21b00;
+        font-weight: normal;
+        margin-bottom: 20px; }
+      .services .services-wrap .services-body .services-group p {
+        font-size: 16px;
+        font-family: "proxima nova", sans-serif;
+        line-height: 1.6;
+        margin-bottom: 20px; }
 
 .projects {
   padding-bottom: 6em;
@@ -731,16 +745,28 @@ nav ul li {
       margin: 0 0 1em 0;
       color: #d21b00; }
     .contact .contact-wrap .contact-body .contact-group p {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%;
       font-family: "proxima-nova", sans-serif;
       font-size: 28px;
       text-align: center;
       color: #6c0e00; }
-      .contact .contact-wrap .contact-body .contact-group p:last-child {
-        margin-right: 0; }
+      @media screen and (min-width: 37.5em) {
+        .contact .contact-wrap .contact-body .contact-group p {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 23.23176%; }
+          .contact .contact-wrap .contact-body .contact-group p:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 37.4375em) {
+        .contact .contact-wrap .contact-body .contact-group p {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 82.94039%;
+          margin-left: 8.5298%;
+          padding-bottom: 1em; }
+          .contact .contact-wrap .contact-body .contact-group p:last-child {
+            margin-right: 0; } }
 
 footer {
   width: 100%;

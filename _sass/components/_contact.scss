@@ -20,7 +20,16 @@
 			.contact-group {
 
 				p {
-					@include span-columns(3);
+					@include media (min-width em(600)) {
+						@include span-columns(3);
+					}
+
+					@include media (max-width em(599)) {
+						@include span-columns(10);
+						@include shift(1);
+						padding-bottom: 1em;
+					}
+
 					font-family: "proxima-nova", sans-serif;
 					font-size: 28px;
 					text-align: center;
