@@ -1,29 +1,6 @@
 http://blog.alinelerner.com/lessons-from-a-years-worth-of-hiring-data/
-
-<p>Who needs our help?</p>
-
-<p>Startups</p>
-
-<p>Retailers</p>
-
-<p>Publishers</p>
-
-<p>Custom Apps and API Integrations</p>
-
-<p>We can help your business connect to cloud services like Xero, Vend, Bigcommerce, Shopify, PayPal, Pin Payments through open source integrations or proprietary apps.</p>
-
-<p>Outgrown your CMS?</p>
-
-<p>We can help you move off a legacy content management system or provide a realistic plan for how to get more value out of your existing platform without burning it down.</p>
-
-<p>API-driven publishing</p>
-
-<p>We have a proven track record building successful and profitable REST API platforms.</p>
-
-<p>Developer Portals and API Documentation</p>
-
-<p>APIs are the primary user interface for developers.</p>
-
-<p>Damage Assessment and Project Recovery</p>
-
-<p>Incompetent programmers? Managerial mediocrity? Outsourced chaos? Stop playing the blame game and start doing something about it. We can provide critical audits and project recovery plans for PHP, Ruby, JavaScript and Python codebases, giving you a clear diagnosis of the problems and an actionable plan for how to recover the investment.</p>
+http://vendroid.venmond.com/
+http://themes.shamsoft.net/flaty/form_validation.html
+http://iarouse.com/dist-rainbow/v1.4/index.html#/pages/profile
+http://demo.yakuzi.eu/maniac/form-validation.html?ages=
+https://bankuei.wordpress.com/2009/07/06/character-concept-generator/

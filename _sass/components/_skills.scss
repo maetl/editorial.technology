@@ -1,14 +1,13 @@
 .skills {
+	padding-bottom: 6em;
+	padding-top: 6em;
 	width: 100%;
     background-color: lighten(#FFCFC8, 4%);
 
     .skills-wrap {
 		@include outer-container;
-		padding-top: 4em;
 
 		.skills-body {
-			margin-top: 6em;
-			padding-bottom: 4em;
 			@include span-columns(10);
 			@include shift(1);
 

@@ -10,6 +10,7 @@
     <link rel="canonical" href="http://editorial.technology/jekyll/update/2014/10/03/welcome-to-jekyll/">
     <script src="//use.typekit.net/ulk8dfj.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -20,15 +21,15 @@
 
     <header id="header" class="masthead">
 	<div class="logo">
-	  <a href="/">Editorial <span>Technology</span></a>
+	  <a href="/">Editorial<span>Technology</span></a>
 	</div>
 	<nav>
 	  <ul>
-	  	<li><a href="#profile">Profile</a></li>
-	  	<li><a href="#skills">Skills</a></li>
-	    <li><a href="#services">Services</a></li>
-	    <li><a href="#projects">Projects</a></li>
-	    <li><a href="#contact">Contact</a></li>
+	  	<li id="profile-link"><a href="#profile">Profile</a></li>
+	  	<li id="skills-link"><a href="#skills">Skills</a></li>
+	    <li id="services-link"><a href="#services">Services</a></li>
+	    <li id="projects-link"><a href="#projects">Projects</a></li>
+	    <li id="contact-link"><a href="#contact">Contact</a></li>
 	  </ul>
 	</nav>
 </header>
@@ -69,18 +70,51 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 
 <script type="text/javascript">
 $(document).ready(function() {
-  var profile = $("#profile");
+  var hero = $("#hero");
   var header = $("#header");
+  var flipOffset = hero.offset().top + 160;
+  var fromBottom = $(document).height() - ($(window).scrollTop() + $(window).height());
 
   $(window).scroll(function() { 
-    var scrollOffset = profile.offset().top + 160;
     var scrollPosition = $(window).scrollTop();
 
-    if (scrollPosition > scrollOffset) {
-      header.removeClass("masthead").addClass("navigation");
+    if (scrollPosition > flipOffset) {
+      if (header.hasClass("masthead")) {
+        header.removeClass("masthead");
+      }
+      header.addClass("navigation");
     } else {
-      header.removeClass("navigation").addClass("masthead");
+      if (header.hasClass("navigation")) {
+        header.removeClass("navigation");
+      }
+      header.addClass("masthead");
     }
+
+    var sections = [];
+    $("nav ul li a").each(function(i, a) {
+      var sectionId = $(a).attr('href');
+      var sectionElement = $(sectionId);
+      var section = {
+        "id": sectionId,
+        "top": sectionElement.offset().top,
+        "bottom": sectionElement.offset().top + sectionElement.height()
+      };
+      sections.push(section);
+    });
+
+    $.each(sections, function(i, s) {
+      if (scrollPosition >= s.top && scrollPosition < s.bottom) {
+        $("a[href='"+ s.id +"']").parent().addClass('active');
+      } else {
+        $("a[href='"+ s.id +"']").parent().removeClass('active')
+      }
+    });
+
+    if (fromBottom == 0) {
+      $("li.active").removeClass('active');
+      $("li:last").addClass('active');
+    }
+
   });
 
 });
